@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>iTotal Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/icon.png" type="images/icon type">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sirin+Stencil&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href= "index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+            <h1>Experience Smart Living&#33;</h1>
+            <div class="menu"><span></span></div>
+            <nav class="navbar-menu">
+                <div class="menu-listing">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="stores.html">Stores</a>
+                    <a href="about.html" class="activ">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main id="about">
+            <div id="content">
+                <section>
+                    <img src="images/about1.jpg" alt="House Exterior">
+                </section>
+                <section>
+                    <img src="images/about2.jpg" alt="House Exterior">
+                </section>
+                <h2>About Us</h2>
+                 <p>Engin is the worlds&#39; leading electronics&#44; home furnishings&#44; and design company&#46; If it goes in the home&#44; they most likely have created it&#46; You can transform your ordinary home into a smart home with our smart products&#46; You will find gadgets&#44; appliances&#44; devices and many more smart products on this website and in stores like Lowe&#39;s&#44; Home Depot and Menards&#46; iTotal Home allows you to do your tasks easily and conviniently&#46;</p>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2021 Sakshi Parikh</p>
+            <a href= "index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        </footer>
+        <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        /* Hamburger Menu */
+        $(".menu").click(function() {
+            $(".menu").toggleClass("active");
+            $(".navbar-menu").toggleClass("active");
+        });
+    </script>
+    </body>
+</html>

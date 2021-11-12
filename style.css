@@ -1,0 +1,423 @@
+/************************************************************GENERAL*****/
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #015255;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/**************************************************************HEADER*****/
+header img{
+    float: left;
+    width: 20%;
+    margin: 1em 5em;
+}
+h1{
+    float: right;
+    text-align: center;
+    padding: 1em;
+    width: 60%;
+    font-size: 2em;
+}
+header{
+    background: url(images/homebcg.png);
+    background-position: center;
+}
+
+/**************************************************************NAVIGATION*****/
+nav{
+    background-color: rgba(255, 255, 255, .9);
+    clear: both;
+    padding-left: 5em;
+    border-bottom: 5px solid #EFBE9D;
+}
+nav a{
+    color: #50A5A8;
+    margin-right: 5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px #015255;
+    transition: all .2s;
+}
+nav a:hover, .activ{
+    color: #015255;
+    text-shadow: 1px 1px 0px #50A5A8;
+    border-bottom: 5px solid #CA7942;
+}
+nav a:active{
+    border-bottom: none;
+}
+
+/**************************************************************HERO*****/
+#banner{
+    padding: 8em 5em;
+}
+/*****Button*****/
+button, #myForm span input{
+    background-color: #50A5A8;
+    background-image: url(images/clean-gray-paper.png);
+    color: #FFF;
+    text-shadow: 1px 1px 0px #DDE0E4;
+    box-shadow: 1px 1px .5px 0 #015255;
+    border: none;
+    font-size: 2em;
+    margin: 0 3em;
+    padding: .5em;
+    font-weight: bold;
+    transition: background-color .5s;
+    transition: color .7s;
+    border: 1px solid; 
+}
+button:hover, #myForm span input:hover{
+    text-shadow: 1px 1px 0px #EFBE9D;
+    box-shadow: 1px 4px .5px 0 #EFBE9D;
+    cursor: pointer;
+    color: #CA7942;
+    background-color: #FFF;
+}
+button:active, #myForm span input:active {
+    box-shadow: 1px 1px .5px 0 #EFBE9D;
+    transform: translateY(4px);
+}
+button:focus{
+    outline: none;
+}
+h1, h2{
+    color: #015255;
+    font-family: 'Sirin Stencil', cursive;
+    text-shadow: 1px 1px 0px #50A5A8;
+}
+h2{
+    display: inline-flex;
+    font-size: 2.3em;
+    width: 60%;
+}
+
+/**************************************************************HOME*****/
+#home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#home div{
+    padding: 3em 5em;
+    text-align: center;
+    width: 33%;
+}
+#home a{
+    justify-content: center;
+}
+h3{
+    font-size: 1.5em;
+    padding-top: 1em;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+}
+#home img{
+    width: 100%;
+}
+#home img:hover{
+    cursor: pointer;
+}
+#home img:active {
+    transform: translateY(4px);
+}
+
+/**************************************************************PRODUCTS*****/
+#content{
+    margin: 1em 5em;
+}
+#content section{
+    float: left;
+    margin: .8em;
+    width: 31%;
+    text-align: center;
+}
+#content div{
+    background-color: #DDE0E4;
+    border: .2em solid #015255;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 1em;
+}
+#content img{
+    max-width: 100%;
+    cursor: pointer;
+    border: 2px solid #EFBE9D;
+    transition: all .1s
+}
+#content img:hover{
+    box-shadow: 2px 2px .5px 0 #CA7942;
+    border-color: #CA7942;
+}
+
+#content img:active{
+     box-shadow: .5px .5px .5px 0 #CA7942;
+    transform: translateY(4px);
+}
+#content h2{
+    width: 100%;
+    padding: .5em;
+    color: #50A5A8;
+    text-shadow: 1px 1px 0 #015255;
+}
+#content button{
+    font-size: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 1em;
+}
+/**************************************************************STORES*****/
+#stores #content{
+    background-color: #DDE0E4;
+    overflow: hidden;
+    border: .2em solid #015255;
+}
+iframe{
+    width: 100%;
+    background-color: #FFF;
+    padding: .5em;
+    float: left;
+}
+#stores div{
+    border: none;
+}
+#map section{
+    border: 3px solid #EFBE9D;
+}
+/**************************************************************ABOUT*****/
+#about p{
+    clear: both;
+    font-size: 1.5em;
+    padding: 1em 0;
+    font-weight: bold;
+}
+#about section{
+    margin: 0;
+    margin-right: .5em;
+    width: 49%;
+    float: left;
+}
+#about img{
+    pointer-events: none;
+    text-align: center;
+}
+#about h2{
+    padding: 0;
+    padding-top: .5em;
+}
+
+/**************************************************************CONTACT*****/
+#contact{
+    margin: 2em 5em;
+}
+#contact h2{
+    font-size: 1.9em;
+    width: 100%;
+}
+#myForm{
+    margin-top: 1em;
+    padding: .5em;
+    border: .1em solid #015255;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#myForm input, #myForm textArea{
+    width: 100%;
+    border: 2px solid #EFBE9D;
+    margin-bottom: 1em;
+    outline: none;
+}
+#myForm span input{
+    width: 20%;
+    margin: 0;
+    font-size: 1em;
+}
+#myForm span input:hover{
+    border-color: #EFBE9D;
+}
+
+/***********************************************FOOTER**********************/
+footer{
+    clear: both;
+    color: #015255;
+    background-image: url(images/clean-gray-paper.png);
+    font-weight: bold;
+    padding: 1em 5em;
+    border-top: 5px solid #EFBE9D;
+}
+footer p{
+    font-size: 1.2em;
+    float: right;
+}
+footer img{
+    width: 10%;
+}
+
+/*********************************************MEDIA QUERY**********************/
+@media screen and (max-width: 600px) {
+    header, nav, header img, header h1, #banner{
+        clear: both;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-menu a{
+        margin: 0;
+    }
+    .logo{
+        width: 50%;
+        margin: 1em 25%;
+    }
+    header{
+        padding: 2em 0;
+        overflow: auto;
+    }
+    #banner{
+        visibility: hidden;
+        height: 0;
+    }
+    #home div{
+        width: 50%;
+    }
+    nav{
+        padding-left: 5em;
+        border-right: .1em solid #CA7942;
+        border-top: .1em solid #CA7942;
+        border-bottom: .1em solid #CA7942;
+    }
+    nav a{
+        clear: both;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    body {
+	font-size: 10px;
+	letter-spacing: 1.7px;
+    }
+    #products nav{
+        overflow: auto;
+        padding: 1em 5em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #products nav a{
+        font-size: 2em;
+        display: block;
+        width: 50%;
+        border-bottom: 3px solid #FFF;
+    }
+    #products nav a:hover{
+        border-bottom: 3px solid #CA7942;
+    }
+    #content div section{
+        width: 46%;
+        text-align: center;
+    }
+    #stores #content div section{
+        clear: both;
+        width: 99%;
+        margin: 1em .1em;
+        font-size: 2em;
+        display: block;
+    }
+    #about section{
+        width: 48%;
+        margin: 1em 1%;
+    }
+    /*Hamburger Menu*/
+    .menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #CA7942;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	transition: 0.3s;
+	z-index: 9999;
+    }
+    .menu span {
+	position: absolute;
+	height: 3px;
+	width: 25px;
+	background-color: #fff;
+   	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+    }  
+.menu span:before {
+	content: '';
+	position: absolute;
+	top: -8px;
+	background-color: #fff;
+	height: 3px;
+	width: 25px;
+	transition: 0.3s;
+    }
+    .menu span:after {
+	content: '';
+	position: absolute;
+	top: 8px;
+	background-color: #fff;
+	height: 3px;
+	width: 25px;
+	transition: 0.3s;
+    }
+    .menu.active span { background-color: transparent; }
+    .menu.active span:before { transform: rotate(45deg);top: 0; }
+    .menu.active span:after { transform: rotate(-45deg);top: 0; }
+    .navbar-menu {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        z-index: 1;
+        position: fixed;
+    }
+    .navbar-menu.active { transform: translateX(0);transition: 0.5s; }
+    .navbar-menu .menu-listing { padding: 0;margin: 0;text-align: right; }
+    .menu-listing a {
+        display: block;
+        background-color: #fff;
+        color: #50A5A8;
+        display: block;
+        font-size: 1rem;
+        height: 50px;
+        line-height: 50px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .menu-listing a:hover{ background-color: #015255;color: #fff;transition: 0.5s; }
+	.navbar-menu .menu-listing { text-align: center; }
+    footer .logo{
+        width: 30%;
+        margin: 0;
+    }
+    footer p{
+        margin: 1em 0;
+    }
+}
+

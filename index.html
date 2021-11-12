@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iTotal Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon.png" type="images/icon type">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sirin+Stencil&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <a href= "index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+            <h1>Experience Smart Living&#33;</h1>
+            <div class="menu"><span></span></div>
+            <nav class="navbar-menu">
+                <div class="menu-listing">
+                    <a href="index.html" class="activ">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="stores.html">Stores</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+            <div id="banner">
+                <h2>The world&#39;s leading electronics&#44; home furnishings&#44; and design company&#46;</h2>
+                <button>Shop Now</button>
+            </div>
+        </header>
+        <main id="home">
+            <div id="bundles">
+                <a><img src="images/bundles.png" alt="bundles" onmouseover="this.src='images/bundles2.png'" onmouseout="this.src='images/bundles.png'">
+                <h3>Bundles</h3></a>
+            </div>
+            <div id="lightings">    
+                <a><img src="images/lightings.png" alt="lightings" onmouseover="this.src='images/lightings2.png'" onmouseout="this.src='images/lightings.png'">
+                 <h3>Lightings</h3></a>
+            </div>
+            <div id="security"><a><img src="images/security.png" alt="security" onmouseover="this.src='images/security2.png'" onmouseout="this.src='images/security.png'">
+                <h3>Security</h3></a>
+            </div>
+            <div id="gadgets">
+                <a><img src="images/gadgets.png" alt="gadgets" onmouseover="this.src='images/gadgets2.png'" onmouseout="this.src='images/gadgets.png'">
+            <h3>Gadgets</h3></a>
+            </div>
+            <div id="appliances"><a><img src="images/appliances2.png" alt="appliances" onmouseover="this.src='images/appliances.png'" onmouseout="this.src='images/appliances2.png'">
+                <h3>Appliances</h3></a>
+            </div>
+            <div id="fans">
+                <a><img src="images/fan.png" alt="fans" onmouseover="this.src='images/fan2.png'" onmouseout="this.src='images/fan.png'">
+                <h3>Fans</h3></a>
+            </div>
+        </main>
+        <footer><p>Copyright &copy; 2021 Sakshi Parikh</p>
+            <a href= "index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        </footer>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        /* Hamburger Menu */
+        $(".menu").click(function() {
+            $(".menu").toggleClass("active");
+            $(".navbar-menu").toggleClass("active");
+        });
+    </script>
+</body>
+</html>
